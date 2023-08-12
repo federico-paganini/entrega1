@@ -19,9 +19,38 @@
 <body>
   <main class="mt-5">
     <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+      <div>
+        <button type="button" id="btn-log"><h3>Login</h3></button>
+        <button type="button" id="btn-reg"><h3>Registrarse</h3></button>
+    </div>
+      <form id="form-log" class="formulario">
+        <label for="User">Email o Nombre de Usuario</label>
+        <input type="text"  name="usuario" id="User" placeholder="Email o Nombre de Usuario" required>
+        <label for="Pass">Contraseña</label>
+        <input type="password" name="contraseña" id="Pass" minlength="6" placeholder="Contraseña" required>
+        <input type="checkbox" name="mantenerini" id="manteneriniciado">
+        <label for="manteneriniciado">Mantener sesión iniciada.</label>
+        <button type="submit" id="btn-submitlog">Ingresar</button>
+      </form>
+
+      <form id="form-reg" class="formulario">
+        <label for="New-User">Nombre de Usuario</label>
+        <input type="text" name="nuevousuario" id="New-User" placeholder="Nombre de Usuario" required>
+        <label for="New-Mail">Email</label>
+        <input type="email" name="nuevoemail" id="New-Mail" placeholder="Email" required>
+        <label for="New-Phone">Celular</label>
+        <input type="tel" minlength="9" placeholder="Celular" required>
+        <label for="New-Dir">Dirección</label>
+        <input type="text" name="newdir" placeholder="Dirección" required>
+        <label for="New-pass">Contraseña</label>
+        <input type="password" name="newpass" minlength="6" placeholder="Contraseña" required>
+        <label for="Confirm-pass">Repetir Contraseña</label>
+        <input type="password" name="confpass" minlength="6" placeholder="Repetir Contraseña" required>
+        <label for="chk-data">¿Deseas recibir información actualizada?</label>
+        <input type="checkbox" name="recibedata" id="chk-data">
+        <button type="submit" id="btn-submitreg">Registrarme</button>
+      </form>
+      <script src="js/login.js"></script>
     </div>
   </main>
   <footer class="text-muted">

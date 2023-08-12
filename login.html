@@ -25,19 +25,21 @@
           <button type="button" id="btn-reg"><h3>Registrarse</h3></button>
         </div>
 
-        <form id="form-log" class="formulario">
-          <label for="User">Email o Nombre de Usuario</label>
-          <input type="text"  name="usuario" id="User" placeholder="Email o Nombre de Usuario" required>
-          <label for="Pass">Contraseña</label>
-          <input type="password" name="contraseña" id="Pass" minlength="6" placeholder="Contraseña" required>
-          <input type="checkbox" name="mantenerini" id="manteneriniciado">
-          <label for="manteneriniciado">Mantener sesión abierta</label>
-          <button type="submit" id="btn-submitlog">Ingresar</button>
-        </form>
-        <a href="">¿Olvidaste tu contraseña?</a>
+        <div id="form-log">
+          <form>
+            <label for="User">Email o Nombre de Usuario</label>
+            <input type="text"  name="usuario" id="User" placeholder="Email o Nombre de Usuario" required>
+            <label for="Pass">Contraseña</label>
+            <input type="password" name="contraseña" id="Pass" minlength="6" placeholder="Contraseña" required>
+            <input type="checkbox" name="mantenerini" id="manteneriniciado">
+            <label for="manteneriniciado">Mantener sesión abierta</label>
+            <button type="submit" id="btn-submitlog">Ingresar</button>
+          </form>
+          <a href="">¿Olvidaste tu contraseña?</a>
+        </div>
       </div>
       <div>
-        <form id="form-reg" class="formulario">
+        <form id="form-reg">
           <label for="New-User">Nombre de Usuario</label>
           <input type="text" name="nuevousuario" id="New-User" placeholder="Nombre de Usuario" required>
           <label for="New-Mail">Email</label>

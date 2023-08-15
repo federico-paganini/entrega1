@@ -55,7 +55,7 @@ function displayProducts(products) {
     const productsContainer = document.getElementById("products-container");
 
     products.forEach(product => {
-        debugger;
+        
         let productCard = document.createElement("div");
         productCard.classList.add("card", "mb-4", );
 
@@ -75,20 +75,24 @@ function displayProducts(products) {
         productDescription.textContent = product.description;
         productDescription.classList.add("card-text");
 
-        let productCount = document.createElement("p");
-        productCount.textContent = `Precio: $${product.cost}`;
-        productCount.classList.add("card-text");
+        let productcost = document.createElement("p");
+        productcost.textContent = `Precio: $${product.cost}`;
+        productcost.classList.add("card-text");
 
         let productQuantitySold = document.createElement("p");
         productQuantitySold.textContent = `Cantidad Vendida: ${product.soldCount}`;
         productQuantitySold.classList.add("card-text");
 
         cardBody.appendChild(productName);
+
         cardBody.appendChild(productDescription);
-        cardBody.appendChild(productCount);
+
+        cardBody.appendChild(productcost);
+
         cardBody.appendChild(productQuantitySold);
 
         productCard.appendChild(productImage);
+        
         productCard.appendChild(cardBody);
 
         productsContainer.appendChild(productCard);

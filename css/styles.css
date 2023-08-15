@@ -191,14 +191,16 @@ a.custom-card:hover {
 
 
 /*Start my style*/
-*:not(){
-  margin: 0;
-  padding: 0;
-  font-family: 'Verdana', serif;
+
+.text-muted{
+  background-color: white;
+  margin-top: 50px;
 }
 
 body{
-  background-color: orange !important;
+  background-image: url(/img/fondo\ login.png) !important;
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
 .container2{ /*This part is the colored box that cotains the form*/

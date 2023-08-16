@@ -9,11 +9,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: rgb(248, 249, 250);
-    }
-  </style>
 </head>
 
 <body>
@@ -23,25 +18,21 @@
         <img src="img/login.png" alt="" class="logo">
         <div class="button-box">
           <div id="btn"></div>
-          <button type="button" id="btn-log"><h3>Ingresar</h3></button>
+          <button type="button" id="btn-log"><h3>Iniciar Sesión</h3></button>
           <button type="button" id="btn-reg"><h3>Registrarse</h3></button>
         </div>
-
-        <div id="form-log">
-          <form id="login">
+        <div>
+          <form id="form-log">
             <label for="User">Email o Nombre de Usuario</label>
             <input type="text"  name="usuario" id="User" required>
             <label for="Pass">Contraseña</label>
             <input type="password" name="contraseña" id="Pass" minlength="6" required>
-            <input type="checkbox" name="mantenerini" id="manteneriniciado"><span> Mantener sesión abierta</span>
+            <input type="checkbox" name="mantenerini" id="manteneriniciado"> <span>Mantener sesión abierta</span>
             <label for="manteneriniciado"></label>
             <a href="">¿Olvidaste tu contraseña?</a>
             <button type="submit" id="btn-submitlog">Ingresar</button>
           </form>
-        </div>
-      </div>
 
-      <div>
         <form id="form-reg">
           <label for="New-User">Nombre de Usuario</label>
           <input type="text" name="nuevousuario" id="New-User" required>
@@ -72,16 +63,17 @@
             <option value="Tacuarembo">Tacuarembó</option>
             <option value="Treintaytres">Treinta y Tres</option>
           </select>
-          <label for="Ciudad">Ciudad</label>
+          <br> <label for="Ciudad">Ciudad</label>
+          <input type="text" name="newcity" required>
           <label for="New-Dir">Dirección</label>
           <input type="text" name="newdir" required>
           <label for="New-pass">Contraseña</label>
           <input type="password" name="newpass" minlength="6" required>
           <label for="Confirm-pass">Repetir Contraseña</label>
           <input type="password" name="confpass" minlength="6" required>
-          <label for="chk-data">¿Deseas recibir información actualizada?</label>
-          <input type="checkbox" name="recibedata" id="chk-data">
-          <button type="submit" id="btn-submitreg">Registrarme</button>
+          <label for="chk-data"></label>
+          <input type="checkbox" name="recibedata" id="chk-data"> <span>¿Deseas recibir información actualizada?</span>
+          <button type="submit" id="btn-submitreg">REGISTRARME</button>
         </form>
       </div>
       <script src="js/login.js"></script>

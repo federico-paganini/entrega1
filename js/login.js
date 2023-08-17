@@ -51,6 +51,29 @@ document.addEventListener("DOMContentLoaded", function() {
             }   
         }
         });
+/* Verificación formulario de Registro */
+
+    formreg.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const npass = document.getElementById("newpass").value;
+    const confpass = document.getElementById("confpass").value;
+    const ndep = document.getElementById("Departamento").value;
+
+    console.log(npass, confpass, ndep);
+
+    if (npass === confpass && ndep !== "--Elige un Departamento--") {
+        alert("Registrado con éxito");
+    } else {
+        if (npass !== confpass) {
+            alert("Las contraseñas no son iguales");
+        } else {
+            if (ndep === "--Elige un Departamento--") {
+                alert("Debes elegir un departamento");
+            }
+        }
+    }
+    });
 });
 
 

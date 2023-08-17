@@ -190,7 +190,7 @@ a.custom-card:hover {
 }
 
 
-/*Start my style*/
+/*Start login style*/
 
 #IngresoLogin{
   background-image: url(/img/Fondo_login.png) !important;
@@ -222,7 +222,7 @@ a.custom-card:hover {
 }
 
 #btn-log, #btn-reg { /*buttons shape adjustment (iniciar sesión, registro)*/
-  padding: 10px 30px;
+  padding: 10px 50px;
   cursor: pointer;
   background: transparent;
   border: 0;
@@ -262,13 +262,28 @@ a.custom-card:hover {
   transition: .5s;
 }
 
+#form-log h3, p{
+  text-align: center;
+  margin-top: 10px;
+}
+
+#form-log h3{
+  color: orange;
+}
+
 #form-log input:not(#manteneriniciado){ /*Style in form fields (email, contraseña...)*/
   width: 500px;
-  padding: 15px 0;
-  margin: 0px 0px 40px 45px;
+  margin: 50px 0px 10px 45px;
   border-radius: 30px;
-  border:none;
-  background: rgba(252, 234, 202, 0.61);
+  border-color: #ff2b06;
+  background: rgba(241, 241, 241, 0.61);
+  padding: 20px 45px 20px 20px;
+}
+
+#form-log input::placeholder{
+  color: rgba(204, 204, 204, 0.932);
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #form-log label {
@@ -280,7 +295,7 @@ a.custom-card:hover {
 
 #btn-submitlog{ /*Style button "ingresar"*/
   width: 300px;
-  height: 50px;
+  height: 80px;
   padding: 10px 30px;
   cursor: pointer;
   display: block;
@@ -291,11 +306,12 @@ a.custom-card:hover {
   outline: none;
   border-radius: 30px;
   text-transform: uppercase;
+  font-size: 20px;
 }
 
 #btn-submitlog:hover{
   width: 330px;
-  height: 70px;
+  height: 100px;
   transition: .5s;
 }
 
@@ -391,4 +407,4 @@ span{
 
 .text-muted {
   background-color: rgb(245, 245, 245);
-}s
+}

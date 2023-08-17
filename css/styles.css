@@ -379,7 +379,7 @@ span{
   margin-bottom: 30px;
 }
 
-#form-reg input, select, option{ /*Style in form fields (email, contraseña...)*/
+#form-reg input, select, option{ /*style in form register*/
   border-radius: 30px;
   background: rgba(252, 234, 202, 0.61);
 }

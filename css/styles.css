@@ -222,7 +222,7 @@ a.custom-card:hover {
 }
 
 #btn-log, #btn-reg { /*buttons shape adjustment (iniciar sesión, registro)*/
-  padding: 10px 50px;
+  padding: 16px 80px;
   cursor: pointer;
   background: transparent;
   border: 0;
@@ -286,12 +286,6 @@ a.custom-card:hover {
   font-size: 20px;
 }
 
-#form-log label {
-  color: orange;
-  font-weight: bold;
-  font-size: 18px;
-  margin-left: 45px;
-}
 
 #btn-submitlog{ /*Style button "ingresar"*/
   width: 300px;
@@ -350,11 +344,18 @@ span{
 
 #form-reg input:not(#chk-data){
   width: 500px;
-  height: 20px;
-  padding: 15px 0;
-  margin: 5px 0px 10px 45px;
-  border-radius: 20px;
-  border:none;
+  height: 40px;
+  padding: 20px 20px 20px 45px;
+  margin: 0 0 20px 45px;
+  border-radius: 30px;
+  border-color: #ff2b06;
+  background: rgba(241, 241, 241, 0.61);
+}
+
+#form-reg input::placeholder{
+  color: rgba(204, 204, 204, 0.932);
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #btn-submitreg{
@@ -371,15 +372,15 @@ span{
 }
 
 #form-reg label {
-  color: orange;
+  color: rgba(204, 204, 204, 0.932);
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   margin-left: 45px;
+  margin-bottom: 30px;
 }
 
 #form-reg input, select, option{ /*Style in form fields (email, contraseña...)*/
   border-radius: 30px;
-  border:none;
   background: rgba(252, 234, 202, 0.61);
 }
 
@@ -388,7 +389,7 @@ span{
   font-size: .9em;
   justify-content: space-between;
   padding: 15px 0;
-  margin: 5px 0px 10px 45px;
+  margin: 0px 0px 0px 5px;
   border-radius: 20px;
 }
 /*In this part start the slide style*/

@@ -19,9 +19,69 @@
 <body>
   <main class="mt-5">
     <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+      <div>
+        <div>
+          <button type="button" id="btn-log"><h3>Login</h3></button>
+          <button type="button" id="btn-reg"><h3>Registrarse</h3></button>
+        </div>
+
+        <div id="form-log">
+          <form>
+            <label for="User">Email o Nombre de Usuario</label>
+            <input type="text"  name="usuario" id="User" placeholder="Email o Nombre de Usuario" required>
+            <label for="Pass">Contraseña</label>
+            <input type="password" name="contraseña" id="Pass" minlength="6" placeholder="Contraseña" required>
+            <input type="checkbox" name="mantenerini" id="manteneriniciado">
+            <label for="manteneriniciado">Mantener sesión abierta</label>
+            <button type="submit" id="btn-submitlog">Ingresar</button>
+          </form>
+          <a href="">¿Olvidaste tu contraseña?</a>
+        </div>
       </div>
+      <div>
+        <form id="form-reg">
+          <label for="New-User">Nombre de Usuario</label>
+          <input type="text" name="nuevousuario" id="New-User" placeholder="Nombre de Usuario" required>
+          <label for="New-Mail">Email</label>
+          <input type="email" name="nuevoemail" id="New-Mail" placeholder="Email" required>
+          <label for="New-Phone">Celular</label>
+          <input type="tel" minlength="9" placeholder="Celular" required>
+          <label for="Departamento">Departamento</label>
+          <select name="dep" id="Departamento" required>
+            <option>--Elige un Departamento--</option>
+            <option value="Artigas">Artigas</option>
+            <option value="Canelones">Canelones</option>
+            <option value="CerroLargo">Cerro Largo</option>
+            <option value="Colonia">Colonia</option>
+            <option value="Durazno">Durazno</option>
+            <option value="Flores">Flores</option>
+            <option value="Florida">Florida</option>
+            <option value="Lavalleja">Lavalleja</option>
+            <option value="Maldonado">Maldonado</option>
+            <option value="Montevideo">Montevideo</option>
+            <option value="Paysandu">Paysandú</option>
+            <option value="Rionegro">Río Negro</option>
+            <option value="Rivera">Rivera</option>
+            <option value="Rocha">Rocha</option>
+            <option value="Salto">Salto</option>
+            <option value="Sanjose">San José</option>
+            <option value="Soriano">Soriano</option>
+            <option value="Tacuarembo">Tacuarembó</option>
+            <option value="Treintaytres">Treinta y Tres</option>
+          </select>
+          <label for="Ciudad">Ciudad</label>
+          <label for="New-Dir">Dirección</label>
+          <input type="text" name="newdir" placeholder="Dirección" required>
+          <label for="New-pass">Contraseña</label>
+          <input type="password" name="newpass" minlength="6" placeholder="Contraseña" required>
+          <label for="Confirm-pass">Repetir Contraseña</label>
+          <input type="password" name="confpass" minlength="6" placeholder="Repetir Contraseña" required>
+          <label for="chk-data">¿Deseas recibir información actualizada?</label>
+          <input type="checkbox" name="recibedata" id="chk-data">
+          <button type="submit" id="btn-submitreg">Registrarme</button>
+        </form>
+      </div>
+      <script src="js/login.js"></script>
     </div>
   </main>
   <footer class="text-muted">

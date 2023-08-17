@@ -32,8 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const user = form.querySelector("#User");
         const pass = form.querySelector("#Pass");
 
-        if (user.value && pass.value) {
+        if (user.value && pass.value && (pass.value.length >= 6)) {
             alert("Logueado correctamente");
+            localStorage.setItem('isLoggedIn', 'true');
             setTimeout(function () {
                 window.location.href = "index.html";
             }, 2000);
@@ -41,8 +42,38 @@ document.addEventListener("DOMContentLoaded", function() {
             if (!user.value) {
                 alert("Debes llenar el campo Usuario");
             } else {
-            alert("Debes ingresar una contraseña");
+                if (pass.value.length < 6) {
+                    alert("La contraseña debe tener 6 caracteres o más");
+                } else {
+                    alert("Debes ingresar una contraseña");
+                }
             }   
         }
-        });
+    });
+
+
+
+/* Verificación formulario de Registro */
+
+    const btnsubr = document.getElementById("btn-submitreg");
+
+    btnsubr.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        const npass = formreg.querySelector("#newpass");
+        const confpass = formreg.querySelector("#confpass");
+        const ndep = formreg.querySelector("#Departamento");
+
+        if (npass.value === confpass.value && ndep.value !== "") {
+            alert("Registrado con éxito");
+        } else {
+            if (npass.value !== confpass.value) {
+                alert("Las contraseñas no son iguales");
+            } else {
+                if (ndep.value === "") {
+                    alert("Debes elegir un departamento");
+                }
+            }
+        }
+    });
 });

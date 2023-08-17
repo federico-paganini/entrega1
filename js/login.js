@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     const btnsub = document.getElementById("btn-submitlog");
-    const form = document.querySelector("#form-log form");
+    const form = document.querySelector("#form-log");
 
     btnsub.addEventListener("click", function (event) {
         event.preventDefault();
@@ -25,3 +25,5 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         });
 });
+
+

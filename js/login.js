@@ -32,8 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const user = form.querySelector("#User");
         const pass = form.querySelector("#Pass");
 
-        if (user.value && pass.value) {
+        
+        if (user.value && pass.value && (pass.value.length >= 6)) {
             alert("Logueado correctamente");
+            localStorage.setItem('isLoggedIn', 'true');
             setTimeout(function () {
                 window.location.href = "index.html";
             }, 2000);
@@ -41,7 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
             if (!user.value) {
                 alert("Debes llenar el campo Usuario");
             } else {
-            alert("Debes ingresar una contraseña");
+                if (pass.value.length < 6) {
+                    alert("La contraseña debe tener 6 caracteres o más");
+                } else {
+                    alert("Debes ingresar una contraseña");
+                }
             }   
         }
         });
